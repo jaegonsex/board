@@ -8,6 +8,7 @@ import lombok.Getter;
 public class AccountDto {
     private String email;
     private String nickname;
+    private String password;
 
     static AccountDto from(Account account){
         return AccountDto.builder()
@@ -15,4 +16,5 @@ public class AccountDto {
                 .nickname(account.getNickname())
                 .build();
     }
+
 }
